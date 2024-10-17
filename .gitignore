@@ -2,5 +2,6 @@ build
 *.egg-info
 .python-version
 __pycache__
+.mypy_cache
 
-ablang/model-weights-heavy
+ablang/model-weights-*
