@@ -101,9 +101,11 @@ print(rescodings)
 
 # In[7]:
 
-import sys
-
-sys.exit(0)
+try:
+    import anarci
+except ImportError:
+    print("Please install anarci to use the alignment feature.")
+    sys.exit()
 
 seqs = [
     "EVQLVESGPGLVQPGKSLRLSCVASGFTFSGYGMHWVRQAPGKGLEWIALIIYDESNKYYADSVKGRFTISRDNSKNTLYLQMSSLRAEDTAVFYCAKVKFYDPTAPNDYWGQGTLVTVSS",
